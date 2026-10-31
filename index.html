@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="About Me">
+<meta property="og:description" content="Pakisagot ang mga detalye sa ibaba.">
+<meta property="og:image" content="https://doyouknowme-six.vercel.app/preview.webp">
+<meta name="twitter:card" content="summary_large_image">
 <title>Do you know me?</title>
 <style>
 
@@ -320,7 +324,7 @@
 <div class="flash" id="flash"></div>
 
 <div id="reveal">
-  <img src="image.png" alt="">
+  <img id="scareImg" alt="">
   <button class="close" id="closeBtn">Close</button>
 </div>
 
@@ -339,7 +343,7 @@
     flash.classList.remove('on');
     void flash.offsetWidth;
     flash.classList.add('on');
-
+    document.getElementById('scareImg').src = 'image.png';
     reveal.classList.add('show');
 
     scareSound.currentTime = 0;
